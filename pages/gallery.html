@@ -1,56 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Our Products</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Our Product Gallery</title>
+
+    <link rel="stylesheet" href="../css/gallery.css">
 </head>
 
 <body>
 
-    <div class="container py-5">
+    <header>
+        <h1>Our Product Gallery</h1>
+        <p>Explore some of our latest gadgets and products.</p>
+    </header>
 
-        <h1 class="text-center mb-5">Our Products</h1>
+    <main class="gallery">
 
-        <div class="row g-4">
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../assets/images/product1.jpg" class="card-img-top" alt="Product 1">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product 1</h5>
-                        <p class="card-text">Our first product.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../assets/images/product2.jpg" class="card-img-top" alt="Product 2">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product 2</h5>
-                        <p class="card-text">Our second product.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="../assets/images/product3.jpg" class="card-img-top" alt="Product 3">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Product 3</h5>
-                        <p class="card-text">Our third product.</p>
-                    </div>
-                </div>
-            </div>
-
+        <div class="gallery-item">
+            <img src="../images/phone.jpg" alt="Smartphone">
+            <h2>Smartphones</h2>
+            <p>Latest Android and iPhone devices.</p>
         </div>
 
-    </div>
+        <div class="gallery-item">
+            <img src="../images/laptop.jpg" alt="Laptop">
+            <h2>Laptops</h2>
+            <p>Perfect for school, work, and gaming.</p>
+        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="gallery-item">
+            <img src="../images/smartwatch.jpg" alt="Smartwatch">
+            <h2>Smartwatches</h2>
+            <p>Track your health and daily activities.</p>
+        </div>
+
+        <div class="gallery-item">
+            <img src="../images/accessories.jpg" alt="Accessories">
+            <h2>Accessories</h2>
+            <p>Chargers, earphones, phone cases, and more.</p>
+        </div>
+
+    </main>
 
 </body>
+
 </html>

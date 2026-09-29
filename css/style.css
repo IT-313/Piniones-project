@@ -164,3 +164,49 @@ footer{
     margin-top:40px;
     border-top:2px solid #2563EB;
 }
+.contact-container {
+    width: 60%;
+    margin: 50px auto;
+}
+
+.contact-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-container form {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 15px;
+    align-items: center;
+}
+
+.contact-container label {
+    font-weight: bold;
+}
+
+.contact-container input,
+.contact-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-container textarea {
+    resize: vertical;
+}
+
+.contact-container button {
+    grid-column: 2;
+    width: 120px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2864d7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
