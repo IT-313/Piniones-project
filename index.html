@@ -1,150 +1,258 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kirby Company</title>
 
-    <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
 </head>
 
 <body>
 
-<header id="home">
-    <h1>Kirby Company</h1>
-    <p>Your One-Stop Shop for the Latest Gadgets</p>
+
+<header id="home" class="main-header">
+    <div class="container">
+        <h1>Kirby Company</h1>
+        <p>Your One-Stop Shop for the Latest Gadgets</p>
+    </div>
 </header>
 
 
-<!-- NAVIGATION -->
-<nav>
-    <a href="#home">Home</a>
-    <a href="#services">Services</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#home">Kirby Company</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div class="navbar-nav">
+            <a class="nav-link" href="#home">Home</a>
+            <a class="nav-link" href="#services">Services</a>
+            <a class="nav-link" href="#gallery">Gallery</a>
+            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
+        </div>
+    </div>
+
+</div>
+
+
 </nav>
 
 
-<!-- HOME -->
-<section class="hero">
-    <h2>Welcome to Kirby Company</h2>
+
+<section class="home">
+    <div class="container">
+        <h2>Welcome to Kirby Company</h2>
+
 
     <p>
-        We provide the latest gadgets and technology
-        products at affordable prices.
+        Discover the latest gadgets and technology products
+        at affordable prices.
     </p>
 
-    <button>Shop Now</button>
+    <a href="#gallery" class="btn btn-primary">Shop Now</a>
+</div>
+
+
 </section>
 
+<section id="about" class="section container">
 
-<!-- ABOUT -->
-<section id="about" class="container">
-
+<div class="section-title">
     <h2>About Us</h2>
+    <p>Technology you can trust.</p>
+</div>
 
-    <h3>
-        Kirby Company is a trusted gadget store that offers quality smartphones,
-        laptops, gaming accessories, smartwatches, and electronic devices.
-        Our goal is to provide customers with reliable products and excellent service.
-    </h3>
+<div class="about-content">
+    <p>
+        Kirby Company is a trusted gadget store that offers quality
+        smartphones, laptops, gaming accessories, smartwatches, and
+        electronic devices.
+    </p>
+
+    <p>
+        Our goal is to provide customers with reliable products,
+        affordable prices, and excellent service.
+    </p>
+</div>
+
 
 </section>
 
 
-<!-- SERVICES -->
-<section id="services" class="container">
-
-    <h2>Our Services</h2>
-
-    <ul>
-        <li>✔ Gadget Sales</li>
-        <li>✔ Phone Repair</li>
-        <li>✔ Laptop Repair</li>
-        <li>✔ Software Installation</li>
-        <li>✔ Warranty Assistance</li>
-    </ul>
-
-</section>
+<section id="services" class="section services-section">
 
 
-<!-- GALLERY -->
-<section id="gallery" class="container">
+<div class="container">
 
-    <header>
-        <h1>Our Product Gallery</h1>
-        <p>Explore some of our latest gadgets and products.</p>
-    </header>
+    <div class="section-title">
+        <h2>Our Services</h2>
+        <p>What we can offer you.</p>
+    </div>
 
-    <div class="gallery">
+    <div class="row g-4">
 
-        <div class="gallery-item">
-            <img src="images/phone.jpg" alt="Smartphone">
-            <h2>Smartphones</h2>
-            <p>Latest Android and iPhone devices.</p>
+        <div class="col-md-4">
+            <div class="service-card">
+                <h3>🛒 Gadget Sales</h3>
+                <p>Quality smartphones, laptops, and electronic devices.</p>
+            </div>
         </div>
 
-        <div class="gallery-item">
-            <img src="images/laptop.jpg" alt="Laptop">
-            <h2>Laptops</h2>
-            <p>Perfect for school, work, and gaming.</p>
+        <div class="col-md-4">
+            <div class="service-card">
+                <h3>🔧 Phone Repair</h3>
+                <p>Reliable repair services for different smartphone problems.</p>
+            </div>
         </div>
 
-        <div class="gallery-item">
-            <img src="images/smartwatch.jpg" alt="Smartwatch">
-            <h2>Smartwatches</h2>
-            <p>Track your health and daily activities.</p>
+        <div class="col-md-4">
+            <div class="service-card">
+                <h3>💻 Laptop Repair</h3>
+                <p>Professional assistance for laptop hardware and software issues.</p>
+            </div>
         </div>
 
-        <div class="gallery-item">
-            <img src="images/accessories.jpg" alt="Accessories">
-            <h2>Accessories</h2>
-            <p>Chargers, earphones, phone cases, and more.</p>
+        <div class="col-md-4">
+            <div class="service-card">
+                <h3>⚙️ Software Installation</h3>
+                <p>Installation and setup of essential software and applications.</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="service-card">
+                <h3>🛡️ Warranty Assistance</h3>
+                <p>Helpful support for product warranty concerns and services.</p>
+            </div>
         </div>
 
     </div>
 
+</div>
+
+
+</section>
+
+<section id="gallery" class="section container">
+
+
+<div class="section-title">
+    <h2>Our Product Gallery</h2>
+    <p>Explore some of our latest gadgets and products.</p>
+</div>
+
+<div class="row g-4">
+
+    <div class="col-md-6 col-lg-3">
+        <div class="gallery-item">
+            <img src="images/phone.jpg" alt="Smartphone">
+            <div class="gallery-content">
+                <h3>Smartphones</h3>
+                <p>Latest Android and iPhone devices.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="gallery-item">
+            <img src="images/laptop.jpg" alt="Laptop">
+            <div class="gallery-content">
+                <h3>Laptops</h3>
+                <p>Perfect for school, work, and gaming.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="gallery-item">
+            <img src="images/smartwatch.jpg" alt="Smartwatch">
+            <div class="gallery-content">
+                <h3>Smartwatches</h3>
+                <p>Track your health and daily activities.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6 col-lg-3">
+        <div class="gallery-item">
+            <img src="images/accessories.jpg" alt="Accessories">
+            <div class="gallery-content">
+                <h3>Accessories</h3>
+                <p>Chargers, earphones, phone cases, and more.</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
 </section>
 
 
-<!-- CONTACT -->
-<section id="contact" class="contact-form">
-    <h2>Get in Touch</h2>
+<section id="contact" class="section contact-section">
 
-    <form>
-        <div class="form-group">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+
+<div class="container">
+
+    <div class="section-title">
+        <h2>Get in Touch</h2>
+        <p>Have a question? Send us a message.</p>
+    </div>
+
+    <form class="contact-form">
+
+        <div class="row">
+
+            <div class="col-md-6">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name">
+            </div>
+
+            <div class="col-md-6">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+            </div>
+
         </div>
 
-        <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-        </div>
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" placeholder="Enter subject">
 
-        <div class="form-group">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject">
-        </div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" placeholder="Write your message"></textarea>
 
-        <div class="form-group">
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
-        </div>
+        <button type="submit" class="btn btn-primary">Send Message</button>
 
-        <button type="submit">Submit</button>
     </form>
+
+</div>
+
+
 </section>
 
-
-<!-- FOOTER -->
 <footer>
-    <p>&copy; 2026 Kirby Company | All Rights Reserved.</p>
+    <div class="container">
+        <p>&copy; 2026 Kirby Company | All Rights Reserved.</p>
+    </div>
 </footer>
 
+
+<a href="#home" class="back-to-top">↑</a>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
