@@ -441,5 +441,11 @@ body {
     bottom: 18px;
 }
 
+nav {
+    
+    background: rgba(163, 7, 7, 0.95) !important;
+ 
+}
+
 
 }
